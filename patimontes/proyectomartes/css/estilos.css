@@ -1,0 +1,17 @@
+.jumbotron {
+	background-image: url("../imagenes/img3.jpg");
+	background-size: cover;
+	height: 500px;
+	text-align: right;
+	position: relative;
+	}
+
+.jumbotron h2 {
+	color: #31708f;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Circulo</title>
+	<style>
+		#circulo{
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			background-color: plum;
+		}
+	</style>
+</head>
+<body>
+
+	<button id="miBoton">Clickeame!</button>
+	<div id="circulo"></div>
+
+	
+	<script>
+
+	var aux = 0;
+
+	document.getElementById("miBoton").onclick= function(){
+		if (aux==0) {
+			document.getElementById("circulo").style.display="none";
+			aux=1;
+		}else{
+			document.getElementById("circulo").style.display="block";
+			aux=0;
+		}
+	}
+		
+	</script>
+</body>
+</html>
