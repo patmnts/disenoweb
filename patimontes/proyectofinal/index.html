@@ -80,41 +80,44 @@
           <option value="4">4</option>
           <option value="5">5</option>
           <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="+8">+8</option>
         </select>
       </div>
       
       <label for="platillos">Platillos </label>
       <h5>Ensaladas</h5>
-      <input type="radio" name="e1" value="Verde" id="verde"> Verde 
-      <input type="radio" name="e2"> César
-      <input type="radio" name="e3"> Atún
-      <input type="radio" name="e4"> Mediterranea
-      <input type="radio" name="e5"> Mexicana
-      <input type="radio" name="e6"> Griega
+      <input id="ensalada1" type="checkbox" name="ensalada[]" value="Verde" /> Verde 
+      <input id="ensalada2" type="checkbox" name="ensalada[]" value="César" /> César
+      <input id="ensalada3" type="checkbox" name="ensalada[]" value="Mediterranea" /> Mediterranea
+      <input id="ensalada4" type="checkbox" name="ensalada[]" value="Griega" /> Griega
+      <input id="ensalada5" type="checkbox" name="ensalada[]" value="Capresse" /> Capresse
 
       <h5>Sandwiches</h5>
-      <input type="radio" name="s1"> Pollo 
-      <input type="radio" name=s2> Pavo
-      <input type="radio" name="s3"> Vegetariano
+      <input id="sandwich1" type="checkbox" name="sandwich[]" value="Pollo" /> Pollo 
+      <input id="sandwich2" type="checkbox" name="sandwich[]" value="Pavo" /> Pavo
+      <input id="sandwich3" type="checkbox" name="sandwich[]" value="Vegetariano" /> Vegetariano
 
       <h5>Bebidas</h5>
-      <input type="radio" name="b1"> Agua Natural 
-      <input type="radio" name="b2"> Té Helado
-      <input type="radio" name="b3"> Agua de Sabor
-      <input type="radio" name="b4"> Refresco
+      <input id="bebida1" type="checkbox" name="bebida[]" value="Agua Natural" /> Agua Natural 
+      <input id="bebida2" type="checkbox" name="bebida[]" value="Té Helado" />Té Helado
+      <input id="bebida3" type="checkbox" name="bebida[]" value="Agua de Sabor" />Agua de Sabor
+      <input id="bebida4" type="checkbox" name="bebida[]" value="Refresco" />Refresco
       <br>
       <br>
       <button type="submit" id="envio" class="btn btn-info">Enviar</button>
     </div>
 
     <div id="resultado" class="row">
+    
+    <h4>Detalles de Pedido</h4>
+
+    <span id="resumen"></span>
+
       
     </div>
 
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div> 
+    <!-- /container -->   
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
